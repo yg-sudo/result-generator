@@ -1,0 +1,78 @@
+<resources>
+    <style name="Theme.Drawer" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_error</item>
+        <item name="colorOnError">@color/md_theme_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_onErrorContainer</item>
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorOnBackground">@color/md_theme_onBackground</item>
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_outline</item>
+        <item name="colorSurfaceInverse">@color/md_theme_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_inversePrimary</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item> <item name="textAppearanceDisplayLarge">@style/Theme.Drawer.TextAppearance.DisplayLarge</item>
+        <item name="textAppearanceHeadlineLarge">@style/Theme.Drawer.TextAppearance.HeadlineLarge</item>
+        <item name="textAppearanceTitleLarge">@style/Theme.Drawer.TextAppearance.TitleLarge</item>
+        <item name="textAppearanceBodyLarge">@style/Theme.Drawer.TextAppearance.BodyLarge</item>
+
+        <item name="shapeAppearanceSmallComponent">@style/Theme.Drawer.ShapeAppearance.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/Theme.Drawer.ShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/Theme.Drawer.ShapeAppearance.LargeComponent</item>
+    </style>
+
+    <style name="Theme.Drawer.TextAppearance.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="android:fontFamily">@font/roboto_flex</item> <item name="android:textStyle">bold</item>
+        <item name="android:textSize">64sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+    <style name="Theme.Drawer.TextAppearance.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:fontFamily">@font/roboto_flex</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    <style name="Theme.Drawer.TextAppearance.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">@font/roboto_flex</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.Drawer.TextAppearance.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:fontFamily">@font/roboto_flex</item>
+    </style>
+
+
+    <style name="Theme.Drawer.ShapeAppearance.SmallComponent" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">16dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="Theme.Drawer.ShapeAppearance.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeBottomLeft">8dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="Theme.Drawer.ShapeAppearance.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">48dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+</resources>

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "24042051591",
+    "firebase_url": "https://exam-result-calculator-default-rtdb.firebaseio.com",
+    "project_id": "exam-result-calculator",
+    "storage_bucket": "exam-result-calculator.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24042051591:android:2e4dc3dae72f18b6cff2a2",
+        "android_client_info": {
+          "package_name": "com.yg.drawer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEMDPo47D8oL7DWJf1dOQP1dMdMpUaO7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24042051591:android:fb47c4fc18485980cff2a2",
+        "android_client_info": {
+          "package_name": "com.yg.resultcalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEMDPo47D8oL7DWJf1dOQP1dMdMpUaO7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
