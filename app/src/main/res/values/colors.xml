@@ -141,4 +141,13 @@
 <color name="md_theme_surfaceContainer_highContrast">#E6E0E9</color>
 <color name="md_theme_surfaceContainerHigh_highContrast">#D8D2DA</color>
 <color name="md_theme_surfaceContainerHighest_highContrast">#CAC5CC</color>
+
+    <!-- Legacy colors mapped to M3 for build workaround -->
+    <color name="purple_200">@color/md_theme_secondaryContainer</color> <!-- Mapped to md_theme_secondaryContainer -->
+    <color name="purple_500">@color/md_theme_secondary</color> <!-- Mapped to md_theme_secondary -->
+    <color name="purple_700">@color/md_theme_secondary</color> <!-- Mapped to md_theme_secondary (darker variant ideally, but using base for simplicity) -->
+    <color name="teal_200">@color/md_theme_tertiaryContainer</color> <!-- Mapped to md_theme_tertiaryContainer -->
+    <color name="teal_700">@color/md_theme_tertiary</color> <!-- Mapped to md_theme_tertiary -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color> <!-- Often included with black -->
 </resources>
