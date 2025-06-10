@@ -41,38 +41,63 @@
 
     <style name="Theme.Drawer.TextAppearance.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
         <item name="android:fontFamily">@font/roboto_flex</item> <item name="android:textStyle">bold</item>
-        <item name="android:textSize">64sp</item>
-        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textSize">68sp</item>
+        <item name="android:letterSpacing">-0.015</item>
     </style>
     <style name="Theme.Drawer.TextAppearance.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
         <item name="android:fontFamily">@font/roboto_flex</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
     </style>
     <style name="Theme.Drawer.TextAppearance.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
         <item name="android:fontFamily">@font/roboto_flex</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
     </style>
     <style name="Theme.Drawer.TextAppearance.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
         <item name="android:fontFamily">@font/roboto_flex</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
     </style>
 
 
     <style name="Theme.Drawer.ShapeAppearance.SmallComponent" parent="ShapeAppearance.Material3.Corner.Medium">
-        <item name="cornerSize">16dp</item>
+        <item name="cornerSize">20dp</item>
         <item name="cornerFamily">rounded</item>
     </style>
 
     <style name="Theme.Drawer.ShapeAppearance.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
-        <item name="cornerSizeTopLeft">32dp</item>
-        <item name="cornerSizeBottomRight">32dp</item>
-        <item name="cornerSizeTopRight">8dp</item>
-        <item name="cornerSizeBottomLeft">8dp</item>
-        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopLeft">cut</item>
+        <item name="cornerSizeTopLeft">24dp</item>
+        <item name="cornerFamilyBottomRight">cut</item>
+        <item name="cornerSizeBottomRight">24dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSizeBottomLeft">12dp</item>
     </style>
 
     <style name="Theme.Drawer.ShapeAppearance.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
-        <item name="cornerSize">48dp</item>
+        <item name="cornerSize">56dp</item>
         <item name="cornerFamily">rounded</item>
+    </style>
+
+    <!-- Component Styles -->
+    <style name="Widget.App.Button.Expressive" parent="Widget.Material3.Button">
+        <item name="shapeAppearance">?attr/shapeAppearanceSmallComponent</item>
+        <item name="android:textAppearance">@style/Theme.Drawer.TextAppearance.BodyLarge</item>
+        <item name="backgroundTint">?attr/colorSecondaryContainer</item>
+        <item name="android:textColor">?attr/colorOnSecondaryContainer</item>
+    </style>
+
+    <style name="Widget.App.Card.Expressive" parent="Widget.Material3.CardView.Elevated">
+        <item name="shapeAppearance">?attr/shapeAppearanceMediumComponent</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <style name="Widget.App.FloatingActionButton.Expressive" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="shapeAppearance">?attr/shapeAppearanceLargeComponent</item>
+        <item name="backgroundTint">?attr/colorPrimaryContainer</item>
+        <item name="tint">?attr/colorOnPrimaryContainer</item> <!-- Use tint for FAB icon color -->
     </style>
 </resources>
