@@ -1,71 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
 
-    <EditText
-        android:id="@+id/Marks"
-        android:layout_width="213dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="291dp"
-        android:layout_marginEnd="102dp"
-        android:ems="10"
-        android:hint="@string/please_enter_marks"
-        android:importantForAutofill="no"
-        android:inputType="numberDecimal"
-        android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toTopOf="@+id/Category"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/Category"
-        android:layout_width="211dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="69dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="95dp"
-        android:ems="10"
-        android:hint="@string/please_enter_category"
-        android:inputType="text"
-        android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Marks" />
-
-    <TextView
-        android:id="@+id/textHome"
-        android:layout_width="153dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="129dp"
-        android:layout_marginEnd="129dp"
-        android:layout_marginBottom="94dp"
-        android:text="@string/design_by_yojit_ghadi"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/Marks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/please_enter_marks"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="@string/please_enter_category"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="172dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="187dp"
-        android:backgroundTint="#6750A4"
+        style="@style/Widget.App.Button.Expressive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/generate_result"
-        app:layout_constraintBottom_toTopOf="@+id/textHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Category"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@id/card" />
 
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/design_by_yojit_ghadi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
